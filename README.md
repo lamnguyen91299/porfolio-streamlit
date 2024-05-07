@@ -12,4 +12,3 @@ The website is built using Streamlit's simple yet powerful interface, which allo
 - Light/dark mode toggle
 - A timeline with Streamlit-Timeline
 - Cross platform
-
