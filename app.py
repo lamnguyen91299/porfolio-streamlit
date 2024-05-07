@@ -21,7 +21,7 @@ with st.sidebar:
       div = Div(text=html)
       st.bokeh_chart(div)  
     with open("static/CV_DA_lamnguyen.pdf", "rb") as file:
-        btn = st.download_button(
+        btn = st.download_button( 
                 label="Download Resume",
                 data=file,
                 file_name="CV_DA_lamnguyen.pdf"
@@ -53,21 +53,36 @@ with col3:
 st.title('Projects')
 st.subheader('Youtube channel auto report')
 st.write('Utilize Python and MML to develop an app for automatically analyzing data from a YouTube channel.')
-if st.button('Open Project', key = 54):
-  js = "window.open('https://youtube-auto-report.streamlit.app')"  # New tab or window
-  html = '<img src onerror="{}">'.format(js)
-  div = Div(text=html)
-  st.bokeh_chart(div)  
+col1, col2 = st.columns([0.15,0.8])
+with col1:
+  if st.button('Open Project', key = 54):
+    js = "window.open('https://youtube-auto-report.streamlit.app')"  # New tab or window
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)  
+with col2:
+  if st.button('Open Github', key = 55):
+    js = "window.open('https://github.com/lamnguyen91299/youtube-report-streamlit')"  # New tab or window
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)   
   
   
 st.subheader('Application using gemini Api')
 st.write('An application utilizes MML Gemini Pro to generate a marketing campaign based on selected inputs, creating descriptions based on the input images.')
-if st.button('Show Project', key =55):
-  js = "window.open('https://gen-ai-app.streamlit.app')"  # New tab or window
-  html = '<img src onerror="{}">'.format(js)
-  div = Div(text=html)
-  st.bokeh_chart(div)  
-  
+col1, col2 = st.columns([0.15,0.8])
+with col1:
+  if st.button('Show Project', key =56):
+    js = "window.open('https://gen-ai-app.streamlit.app')"  # New tab or window
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)  
+with col2:
+  if st.button('Open Github', key = 57):
+    js = "window.open('https://github.com/lamnguyen91299/streamlit-gemini-app')"  # New tab or window
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)   
 
 hide_streamlit_style = """
             <style>

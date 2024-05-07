@@ -13,7 +13,3 @@ The website is built using Streamlit's simple yet powerful interface, which allo
 - A timeline with Streamlit-Timeline
 - Cross platform
 
-
-## Demo
-
-[Click here to see it ](https://harshit-wadhwani-portfolio-website-app-xy5k20.streamlit.app/)
